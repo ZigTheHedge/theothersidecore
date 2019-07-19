@@ -1,0 +1,16 @@
+[
+{
+  "modid": "theothersidecore",
+  "name": "The Other Side modpack Core Mod",
+  "description": "Core mod for my modpack",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ZigTheHedge"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

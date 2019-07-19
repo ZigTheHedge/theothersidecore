@@ -1,0 +1,28 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "theothersidecore:timeblock"
+  },
+  "variants": {
+    "normal": [
+      {
+        "model": "theothersidecore:timeblock"
+      },
+      {
+        "model": "theothersidecore:timeblock",
+        "y": 90
+      },
+      {
+        "model": "theothersidecore:timeblock",
+        "y": 180
+      },
+      {
+        "model": "theothersidecore:timeblock",
+        "y": 270
+      }
+    ],
+    "inventory": [{
+      "transform": "forge:default-block"
+    }]
+  }
+}

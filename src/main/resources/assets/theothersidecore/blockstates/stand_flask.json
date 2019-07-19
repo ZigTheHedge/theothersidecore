@@ -1,0 +1,34 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "custom": { "flip-v": true },
+    "model": "theothersidecore:stand_flask.obj",
+    "textures": {
+      "#Material.001": "blocks/planks_oak",
+      "#Material.002": "blocks/iron_block"
+    }
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{
+      "transform": "forge:default-block"
+    }],
+    "facing": {
+      "north": { "y": 270 },
+      "south": { "y": 90 },
+      "east": {},
+      "west": { "y":  180 },
+      "up": {},
+      "down": {}
+    },
+    "withflask": {
+      "true": {
+        "textures": {
+          "#None": "theothersidecore:blocks/semi-glass"
+        },
+        "submodel": "theothersidecore:stand_flask_itself.obj"
+      },
+      "false": {}
+    }
+  }
+}

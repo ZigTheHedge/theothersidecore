@@ -1,0 +1,19 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "custom": { "flip-v": true },
+    "model": "theothersidecore:piston_vessel.obj",
+    "textures": {
+      "#Material.001": "blocks/glass",
+      "#Material.002": "theothersidecore:blocks/brasspipe",
+      "#Material.002_NONE": "theothersidecore:blocks/brasspipe",
+      "#None": "blocks/water_still"
+    }
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{
+      "transform": "forge:default-block"
+    }]
+  }
+}

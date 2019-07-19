@@ -1,0 +1,34 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "custom": { "flip-v": true },
+    "model": "theothersidecore:pipebend_dr.obj",
+    "textures": {
+      "#None": "theothersidecore:blocks/brasspipe"
+    }
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{
+      "transform": "forge:default-block"
+    }],
+    "facing=north,vertical=side": { "x": 90, "y": 90},
+    "facing=south,vertical=side": { "x": 90, "y": 270},
+    "facing=west,vertical=side": { "x": 90},
+    "facing=east,vertical=side": { "x": 90, "y": 180},
+    "facing=up,vertical=side": [{}],
+    "facing=down,vertical=side": [{}],
+    "facing=north,vertical=up": { "y": 90, "x": 180},
+    "facing=south,vertical=up": { "y": -90, "x": 180},
+    "facing=west,vertical=up": { "x": 180},
+    "facing=east,vertical=up": { "y": 180, "x": 180},
+    "facing=up,vertical=up": [{}],
+    "facing=down,vertical=up": [{}],
+    "facing=north,vertical=down": { "y":  90},
+    "facing=south,vertical=down": { "y": -90},
+    "facing=west,vertical=down": [{}],
+    "facing=east,vertical=down": { "y": 180},
+    "facing=up,vertical=down": [{}],
+    "facing=down,vertical=down": [{}]
+  }
+}

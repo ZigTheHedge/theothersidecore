@@ -1,0 +1,21 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "custom": { "flip-v": true },
+    "model": "theothersidecore:pipe_straight.obj",
+    "textures": {
+      "#None": "theothersidecore:blocks/brasspipe"
+    }
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{
+      "transform": "forge:default-block"
+    }],
+    "direction": {
+      "updown": {},
+      "northsouth": { "x": 90 },
+      "eastwest": { "x":  90, "y":  90}
+    }
+  }
+}

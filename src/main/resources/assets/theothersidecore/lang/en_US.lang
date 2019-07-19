@@ -1,0 +1,12 @@
+item.theothersidecore.timebattery.name=Time Battery
+
+tile.theothersidecore.timeblock.name=Time Block
+tile.theothersidecore.brassbrick.name=Brass Brick
+tile.theothersidecore.brasspipebent.name=Brass Bent Pipe
+tile.theothersidecore.brasspipestraight.name=Brass Straight Pipe
+tile.theothersidecore.brassglass.name=Brass Glass
+tile.theothersidecore.pistonvessel.name=Piston Vessel
+tile.theothersidecore.flask.name=Flask
+
+
+itemGroup.theothersidecore.name=The Other Side Core
