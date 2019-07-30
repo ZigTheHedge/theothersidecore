@@ -1,10 +1,6 @@
-# Blender MTL File: 'piston_vessel.blend'
-# Material Count: 4
+# Blender MTL File: 'Vessel.blend'
+# Material Count: 2
 
-newmtl Material.001
+newmtl Capsule
 
-newmtl Material.002
-
-newmtl Material.002_NONE
-
-newmtl None
+newmtl Connectors

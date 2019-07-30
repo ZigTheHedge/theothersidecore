@@ -4,16 +4,43 @@
     "custom": { "flip-v": true },
     "model": "theothersidecore:piston_vessel.obj",
     "textures": {
-      "#Material.001": "blocks/glass",
-      "#Material.002": "theothersidecore:blocks/brasspipe",
-      "#Material.002_NONE": "theothersidecore:blocks/brasspipe",
-      "#None": "blocks/water_still"
+      "#Connectors": "theothersidecore:blocks/brasspipe",
+      "#Capsule": "theothersidecore:blocks/glass"
     }
   },
   "variants": {
     "normal": [{}],
     "inventory": [{
       "transform": "forge:default-block"
-    }]
+    }],
+    "facing": {
+      "up": {},
+      "down": {},
+      "north": {},
+      "south": {},
+      "east": {},
+      "west": {}
+    },
+    "is_broken": {
+      "true": {
+        "textures": {
+          "#Capsule": "theothersidecore:blocks/glass_broken"
+        }
+      },
+      "false": {
+        "textures": {
+          "#Capsule": "theothersidecore:blocks/glass"
+        }
+      }
+    },
+    "has_liquid": {
+      "true": {
+        "textures": {
+          "#Capsule": "blocks/water_still"
+        }
+      },
+      "false": {
+      }
+    }
   }
 }

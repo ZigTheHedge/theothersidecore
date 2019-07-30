@@ -36,25 +36,7 @@ public abstract class CommonTEBlock <TE extends TileEntity> extends CommonBlock 
     @Override
     public abstract TE createTileEntity(World worldIn, IBlockState meta);
 
-    @Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-        return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
-    }
-
-    public void registerTESR () {
-        //odMain.proxy.registerBlockRenderer(this);
-    }
-
-    @Override
-    public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
-        super.onBlockPlacedBy(world, pos, state, placer, stack);
-    }
-
     @Nullable
     public abstract void initModel();
 
-    @Override
-    protected BlockStateContainer createBlockState() {
-        return super.createBlockState();
-    }
 }

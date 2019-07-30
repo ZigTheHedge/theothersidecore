@@ -3,6 +3,7 @@ package com.cwelth.theothersidecore.items;
 import com.cwelth.theothersidecore.ModMain;
 import com.cwelth.theothersidecore.blocks.AllBlocks;
 import com.cwelth.theothersidecore.blocks.BrassPipeBent;
+import com.cwelth.theothersidecore.blocks.BrassPipeStraight;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
@@ -18,6 +19,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import static com.cwelth.theothersidecore.blocks.BrassPipeBent.VERTICAL;
 import static com.cwelth.theothersidecore.blocks.CommonBlock.FACING;
+import static com.cwelth.theothersidecore.blocks.BrassPipeStraight.DIRECTION;
 
 public class Wrench extends Item {
     public Wrench()
@@ -44,6 +46,9 @@ public class Wrench extends Item {
                 EnumFacing propFacing = state.getValue(FACING).rotateAround(EnumFacing.Axis.Y);
                 worldIn.setBlockState(pos, state.withProperty(FACING, propFacing), 2);
             }
+        }
+        if(state != null && state.getBlock() == AllBlocks.brassPipeStraight) {
+            worldIn.setBlockState(pos, state.withProperty(DIRECTION, state.getValue(DIRECTION).next()), 2);
         }
         return EnumActionResult.PASS;
     }

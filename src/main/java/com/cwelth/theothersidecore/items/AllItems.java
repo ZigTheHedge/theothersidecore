@@ -15,13 +15,26 @@ public class AllItems {
     @GameRegistry.ObjectHolder(ModMain.MODID + ":wrench")
     public static Wrench wrench;
 
+    @GameRegistry.ObjectHolder(ModMain.MODID + ":timekey")
+    public static TimeKey timeKey;
+
+    @GameRegistry.ObjectHolder(ModMain.MODID + ":gear")
+    public static Gear gear;
+
+    @GameRegistry.ObjectHolder(ModMain.MODID + ":timeingot")
+    public static TimeIngot timeIngot;
+
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         wrench.initModel();
+        timeKey.initModel();
+        gear.initModel();
+        timeIngot.initModel();
     }
 
     public static void registerOreDictionary()
     {
+        OreDictionary.registerOre("ingotTime", AllItems.timeIngot);
     }
 
 }

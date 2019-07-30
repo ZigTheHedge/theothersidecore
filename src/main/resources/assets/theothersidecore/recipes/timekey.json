@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "theothersidecore:timekey"
+  },
+  "pattern": [
+    "aaa",
+    " b ",
+    "bcb"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "a": {
+      "type": "forge:ore_dict",
+      "ore": "shardsDimensional"
+    },
+    "b": {
+      "type": "forge:ore_dict",
+      "ore": "ingotVibrantAlloy"
+    },
+    "c": {
+      "type": "forge:ore_dict",
+      "ore": "plateIridiumAlloy"
+    }
+  }
+}

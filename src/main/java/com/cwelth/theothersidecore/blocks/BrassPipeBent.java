@@ -67,6 +67,7 @@ public class BrassPipeBent extends CommonBlock {
     public BrassPipeBent() {
         super(Material.IRON, "brasspipebent");
         setCreativeTab(ModMain.toscCreativeTab);
+        setBlockUnbreakable();
         setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(VERTICAL, PropertyVerticalRotation.DOWN));
     }
 

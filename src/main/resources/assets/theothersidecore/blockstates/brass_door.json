@@ -1,0 +1,31 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{
+      "transform": "forge:default-block",
+      "model": "theothersidecore:brass_door_bottom"
+    }],
+    "facing": {
+      "down": {},
+      "up": {},
+      "north": {},
+      "south": { "y":  180 },
+      "east": { "y": 90 },
+      "west": { "y": 270 }
+    },
+    "is_upper": {
+      "true": {
+      },
+      "false": {
+      }
+    },
+    "tesrmodel": {
+      "none": { "model": "intimepresence:empty" },
+      "upper": { "model": "theothersidecore:brass_door_top" },
+      "lower": { "model": "theothersidecore:brass_door_bottom" }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 package com.cwelth.theothersidecore.tileentities;
 
+import com.cwelth.theothersidecore.ModMain;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
@@ -67,8 +68,9 @@ public class CommonTE extends TileEntity {
     @Override
     public void onDataPacket(NetworkManager net, SPacketUpdateTileEntity packet) {
         super.onDataPacket(net, packet);
-        world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 3);
         this.readFromNBT(packet.getNbtCompound());
+        ModMain.logger.info("Received packet: "+packet.getNbtCompound().toString()+", side: "+world.isRemote);
+        world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 3);
     }
 
     public NBTTagCompound writeFluidTankToNBT(String string, FluidTank tank, NBTTagCompound tag)

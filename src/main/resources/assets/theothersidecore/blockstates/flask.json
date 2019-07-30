@@ -4,7 +4,7 @@
     "custom": { "flip-v": true },
     "model": "theothersidecore:flask.obj",
     "textures": {
-      "#None": "theothersidecore:blocks/semi-glass"
+      "#None": "theothersidecore:blocks/glass"
     }
   },
   "variants": {

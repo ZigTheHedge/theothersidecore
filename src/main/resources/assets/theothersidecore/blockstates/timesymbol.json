@@ -1,0 +1,33 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cube_all",
+    "textures": {
+      "all": "theothersidecore:blocks/timeblock"
+    }
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{
+      "transform": "forge:default-block"
+    }],
+    "facing": {
+      "up": {},
+      "down": {},
+      "north": {},
+      "south": {},
+      "east": {},
+      "west": {}
+    },
+    "model_symbol": {
+      "true": {
+        "model": "theothersidecore:timesymbol.obj",
+        "textures": {
+          "#None": "theothersidecore:blocks/glass"
+        }
+      },
+      "false": {
+      }
+    }
+  }
+}

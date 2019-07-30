@@ -1,0 +1,22 @@
+item.theothersidecore.wrench.name=Ключ
+item.theothersidecore.timekey.name=Ключ Времени
+item.theothersidecore.gear.name=Шестеренка
+item.theothersidecore.timeingot.name=Слиток Времени
+
+tile.theothersidecore.timeblock.name=Блок Времени
+tile.theothersidecore.brassbrick.name=Латунный кирпич
+tile.theothersidecore.brasspipebent.name=Загнутая латунная труба
+tile.theothersidecore.brasspipestraight.name=Прямая латунная труба
+tile.theothersidecore.brassglass.name=Слекло в латунной рамке
+tile.theothersidecore.pistonvessel.name=Цилиндр
+tile.theothersidecore.flask.name=Флакон
+tile.theothersidecore.gearbox.name=Механизм
+tile.theothersidecore.brass_door.name=Латунная дверь
+tile.theothersidecore.timesymbol.name=Символ Времени
+
+brassdoor.keyneeded=Вам нужен Ключ Времени, чтобы взаимодействовать с этой дверью
+core.worldpartsrestored=%d из %d капсул были восстановлены!
+core.worldrestored=Мир спасен!
+
+itemGroup.theothersidecore.name=The Other Side Core
+

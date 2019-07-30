@@ -1,0 +1,38 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "custom": { "flip-v": true },
+    "model": "theothersidecore:gearbox_cabinet.obj",
+    "textures": {
+      "#MatCabinet": "theothersidecore:blocks/brasspipe",
+      "#MatDoor": "theothersidecore:blocks/brassdoor",
+      "#MatGears": "blocks/iron_block"
+    }
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{
+      "transform": "forge:default-block"
+    }],
+    "facing": {
+      "down": {},
+      "up": {},
+      "north": { "y":  -90 },
+      "south": { "y":  90 },
+      "east": {},
+      "west": { "y": 180 }
+    },
+    "has_door": {
+      "true": {
+        "model": "theothersidecore:gearbox_door.obj"
+      },
+      "false": {}
+    },
+    "has_gear": {
+      "true": {
+        "model": "theothersidecore:gearbox_gear.obj"
+      },
+      "false": {}
+    }
+  }
+}

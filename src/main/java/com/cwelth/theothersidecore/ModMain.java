@@ -7,6 +7,7 @@ import com.cwelth.theothersidecore.items.AllItems;
 import com.cwelth.theothersidecore.network.SyncCaps;
 import com.cwelth.theothersidecore.player.CapabilityEvents;
 import com.cwelth.theothersidecore.proxy.CommonProxy;
+import com.cwelth.theothersidecore.worldgen.CapsuleGenerator;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fluids.FluidRegistry;
@@ -55,6 +56,8 @@ public class ModMain {
         MinecraftForge.EVENT_BUS.register(new CapabilityEvents());
 
         network.registerMessage(SyncCaps.Handler.class, SyncCaps.class, 1, Side.CLIENT);
+
+        GameRegistry.registerWorldGenerator(new CapsuleGenerator(), 1);
 
         AllItems.registerOreDictionary();
         AllBlocks.registerOreDictionary();

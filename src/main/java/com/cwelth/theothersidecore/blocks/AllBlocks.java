@@ -31,6 +31,15 @@ public class AllBlocks {
     @GameRegistry.ObjectHolder(ModMain.MODID + ":stand_flask")
     public static StandFlask standFlask;
 
+    @GameRegistry.ObjectHolder(ModMain.MODID + ":gearbox")
+    public static GearBox gearBox;
+
+    @GameRegistry.ObjectHolder(ModMain.MODID + ":brass_door")
+    public static BrassDoor brassDoor;
+
+    @GameRegistry.ObjectHolder(ModMain.MODID + ":timesymbol")
+    public static TimeSymbol timeSymbol;
+
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         timeBlock.initModel();
@@ -41,6 +50,9 @@ public class AllBlocks {
         pistonVessel.initModel();
         flask.initModel();
         standFlask.initModel();
+        gearBox.initModel();
+        brassDoor.initModel();
+        timeSymbol.initModel();
     }
 
     @SideOnly(Side.CLIENT)
@@ -53,6 +65,9 @@ public class AllBlocks {
         pistonVessel.initItemModel();
         flask.initItemModel();
         standFlask.initItemModel();
+        gearBox.initItemModel();
+        brassDoor.initItemModel();
+        timeSymbol.initItemModel();
     }
 
     public static void registerOreDictionary()
