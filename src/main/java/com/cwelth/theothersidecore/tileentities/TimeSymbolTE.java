@@ -4,9 +4,14 @@ import com.cwelth.theothersidecore.ModMain;
 import com.cwelth.theothersidecore.RestoredWorld;
 import com.cwelth.theothersidecore.blocks.PistonVessel;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextFormatting;
+
+import java.awt.*;
 
 public class TimeSymbolTE extends CommonTE {
     public boolean isMoving = false;
@@ -89,6 +94,7 @@ public class TimeSymbolTE extends CommonTE {
         }
         markDirty();
         world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 3);
+        world.playSound(null, getPos(), SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, SoundCategory.BLOCKS, 1.0F, 1.0F);
     }
 
     public void deactivate()
@@ -101,9 +107,10 @@ public class TimeSymbolTE extends CommonTE {
         restoredWorld.setCapsulesToBeRestored(restoredWorld.getCapsulesToBeRestored() + 2);
         int rest = restoredWorld.getCapsulesRestored();
         int toBeRest = restoredWorld.getCapsulesToBeRestored();
-        world.getMinecraftServer().getPlayerList().sendMessage(new TextComponentString(I18n.format("core.worldpartsrestored", rest, toBeRest)));
+        world.getMinecraftServer().getPlayerList().sendMessage(new TextComponentString(TextFormatting.DARK_RED + I18n.format("core.worldpartsdamaged", rest, toBeRest)));
         markDirty();
         world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 3);
+        world.playSound(null, getPos(), SoundEvents.ENTITY_WITHER_DEATH, SoundCategory.BLOCKS, 1.0F, 1.0F);
     }
 
     @Override

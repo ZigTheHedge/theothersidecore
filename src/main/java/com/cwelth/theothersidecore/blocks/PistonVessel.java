@@ -12,6 +12,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -19,6 +20,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -114,6 +116,8 @@ public class PistonVessel extends CommonTEBlock<PistonVesselTE> {
                 worldIn.setBlockState(pos, state, 2);
                 thisTE = (PistonVesselTE)worldIn.getTileEntity(pos);
                 thisTE.setMainBlockPos(thisTEmtp);
+                worldIn.playSound(null, pos, SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.BLOCKS, 1.0F, 1.0F);
+
             } else if (playerIn.getHeldItem(hand).getItem() == Items.WATER_BUCKET)
             {
                 if(state.getValue(IS_BROKEN)) return true;
@@ -122,6 +126,7 @@ public class PistonVessel extends CommonTEBlock<PistonVesselTE> {
                 thisTE = (PistonVesselTE)worldIn.getTileEntity(pos);
                 thisTE.setMainBlockPos(thisTEmtp);
                 playerIn.setHeldItem(hand, new ItemStack(Items.BUCKET));
+                worldIn.playSound(null, pos, SoundEvents.ITEM_BUCKET_EMPTY, SoundCategory.BLOCKS, 1.0F, 1.0F);
             } else if (playerIn.getHeldItem(hand).getItem() == ItemBlock.getItemFromBlock(AllBlocks.pistonVessel))
             {
                 if(!state.getValue(IS_BROKEN)) return true;
@@ -130,6 +135,7 @@ public class PistonVessel extends CommonTEBlock<PistonVesselTE> {
                 thisTE = (PistonVesselTE)worldIn.getTileEntity(pos);
                 thisTE.setMainBlockPos(thisTEmtp);
                 playerIn.getHeldItem(hand).shrink(1);
+                worldIn.playSound(null, pos, SoundEvents.BLOCK_GLASS_PLACE, SoundCategory.BLOCKS, 1.0F, 1.0F);
             }
 
             TileEntity te = worldIn.getTileEntity(pos);

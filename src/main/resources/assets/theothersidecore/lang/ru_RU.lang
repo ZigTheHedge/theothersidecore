@@ -16,6 +16,7 @@ tile.theothersidecore.timesymbol.name=Символ Времени
 
 brassdoor.keyneeded=Вам нужен Ключ Времени, чтобы взаимодействовать с этой дверью
 core.worldpartsrestored=%d из %d капсул были восстановлены!
+core.worldpartsdamaged=Вы сломали структуру! %d из %d капсул были восстановлены!
 core.worldrestored=Мир спасен!
 
 itemGroup.theothersidecore.name=The Other Side Core

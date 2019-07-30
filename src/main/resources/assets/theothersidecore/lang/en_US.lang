@@ -16,6 +16,7 @@ tile.theothersidecore.timesymbol.name=Time Symbol
 
 brassdoor.keyneeded=You need the Time Key to operate this door
 core.worldpartsrestored=%d out of %d capsules has been restored!
+core.worldpartsdamaged=You broke it! %d out of %d capsules has been restored!
 core.worldrestored=World has been restored!
 
 itemGroup.theothersidecore.name=The Other Side Core

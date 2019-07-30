@@ -69,7 +69,6 @@ public class CommonTE extends TileEntity {
     public void onDataPacket(NetworkManager net, SPacketUpdateTileEntity packet) {
         super.onDataPacket(net, packet);
         this.readFromNBT(packet.getNbtCompound());
-        ModMain.logger.info("Received packet: "+packet.getNbtCompound().toString()+", side: "+world.isRemote);
         world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 3);
     }
 
