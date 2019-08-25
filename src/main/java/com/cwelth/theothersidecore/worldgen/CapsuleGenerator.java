@@ -18,7 +18,7 @@ public class CapsuleGenerator implements IWorldGenerator {
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 
         if(random.nextInt(400) != 0) return;
-        if(world.provider.getDimension() != 69)return;
+        if(world.provider.getDimension() != 0)return;
 
         BlockPos basePos = new BlockPos(chunkX * 16 + random.nextInt(16), 100, chunkZ * 16 + random.nextInt(16));
         basePos = world.getTopSolidOrLiquidBlock(basePos).down();

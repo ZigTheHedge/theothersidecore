@@ -69,7 +69,7 @@ public class CommonTE extends TileEntity {
     public void onDataPacket(NetworkManager net, SPacketUpdateTileEntity packet) {
         super.onDataPacket(net, packet);
         this.readFromNBT(packet.getNbtCompound());
-        world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 3);
+        //world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 2);
     }
 
     public NBTTagCompound writeFluidTankToNBT(String string, FluidTank tank, NBTTagCompound tag)
