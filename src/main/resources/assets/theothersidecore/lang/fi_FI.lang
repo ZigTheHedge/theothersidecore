@@ -1,0 +1,22 @@
+item.theothersidecore.wrench.name=Jakoavain
+item.theothersidecore.timekey.name=Ajan avain
+item.theothersidecore.gear.name=Ratas
+item.theothersidecore.timeingot.name=Ajan harkko
+
+tile.theothersidecore.timeblock.name=Ajan kuutio
+tile.theothersidecore.brassbrick.name=Messinki-tiili
+tile.theothersidecore.brasspipebent.name=Messinki-putki
+tile.theothersidecore.brasspipestraight.name=Suora messinki putki
+tile.theothersidecore.brassglass.name=Messinkilasi
+tile.theothersidecore.pistonvessel.name=Mäntä-astia
+tile.theothersidecore.flask.name=Pullo
+tile.theothersidecore.gearbox.name=Vaihdelaatikko
+tile.theothersidecore.brass_door.name=Messinki-ovi
+tile.theothersidecore.timesymbol.name=Ajan symboli
+
+brassdoor.keyneeded=Tarvitset aika-avaimen tämän oven käyttämiseen
+core.worldpartsrestored=%d alkaen %d kapselit on palautettu!
+core.worldpartsdamaged=Rikkoit sen! %d alkaen %d kapselit on palautettu!
+core.worldrestored=Maailma on palautettu!
+
+itemGroup.theothersidecore.name=The Other Side Core
